@@ -1,0 +1,974 @@
+/* ===== RESPONSIVE STYLES ===== */
+
+/* Large laptops and desktops */
+@media screen and (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    
+    .hero-content h2 {
+        font-size: 2.4rem;
+    }
+    
+    /* Team Section */
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+    }
+    
+    /* Stats Section */
+    .stats-section {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    
+    .achievements-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    
+    /* System Requirements */
+    .requirements-container {
+        gap: 1.5rem;
+    }
+    
+    /* Timeline */
+    .timeline-cards {
+        padding: 0 15px;
+    }
+    
+    .timeline-card-content {
+        padding: 20px;
+    }
+}
+
+/* Tablets and small laptops */
+@media screen and (max-width: 992px) {
+    .container {
+        max-width: 900px;
+    }
+    
+    .logo h1 {
+        font-size: 1.6rem;
+    }
+    
+    .main-nav ul li {
+        margin-left: 1.5rem;
+    }
+    
+    .hero {
+        padding: 5rem 0;
+    }
+    
+    .hero-content h2 {
+        font-size: 2.5rem;
+    }
+    
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .game-overview .container {
+        flex-direction: column;
+    }
+    
+    .overview-content, 
+    .about-content,
+    .about-wrapper {
+        flex: 1 0 100%;
+        max-width: 100%;
+    }
+    
+    .overview-image {
+        margin-top: 2rem;
+    }
+    
+    .about-text,
+    .about-image {
+        flex: 1 0 100%;
+    }
+    
+    .about-wrapper {
+        flex-direction: column-reverse;
+        gap: 2rem;
+    }
+    
+    .mission-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .team-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .next-steps {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .footer-content, .footer-top {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .footer-logo, 
+    .footer-links, 
+    .footer-social {
+        margin-bottom: 2rem;
+    }
+    
+    .download-wrapper {
+        flex-direction: column;
+    }
+    
+    .download-image {
+        order: -1;
+        margin-bottom: 2rem;
+    }
+    
+    .download-image img {
+        max-width: 300px;
+    }
+    
+    .strategy-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .rules-section {
+        padding: 4rem 0;
+    }
+    
+    .rules-content h2 {
+        margin-bottom: 2rem;
+    }
+    
+    .timeline-cards {
+        padding: 0 15px;
+    }
+    
+    .timeline-card-content {
+        padding: 20px;
+    }
+    
+    .timeline-section {
+        padding: 60px 0;
+    }
+    
+    .timeline-cards::after {
+        left: 30px;
+    }
+    
+    .timeline-card-item {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+    
+    .timeline-card-right {
+        margin-left: 0;
+    }
+    
+    .timeline-card-left::after,
+    .timeline-card-right::after {
+        left: 20px;
+    }
+    
+    .timeline-card-left .timeline-card-content::before,
+    .timeline-card-right .timeline-card-content::before {
+        left: -40px;
+        right: auto;
+        border-width: 8px 8px 8px 0;
+        border-color: transparent #fff transparent transparent;
+    }
+    
+    .timeline-card-year {
+        font-size: 16px;
+    }
+    
+    .timeline-card-title {
+        font-size: 18px;
+    }
+    
+    .timeline-card-desc {
+        font-size: 14px;
+    }
+    
+    .testimonial-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .challenge-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .resources-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    
+    .tab-content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .tab-image, .tab-text {
+        flex: 1 0 100%;
+    }
+    
+    /* System Requirements */
+    .requirements-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .requirements-box {
+        margin-bottom: 0;
+    }
+    
+    .requirements-notes {
+        padding: 1.5rem;
+    }
+    
+    .testimonial {
+        flex: 0 0 calc(100% - 2rem);
+    }
+    
+    .tournament-card {
+        flex-direction: column;
+    }
+    
+    .tournament-date {
+        width: 100%;
+        flex-direction: row;
+        padding: 1rem;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+    
+    .day, .month {
+        font-size: 1.2rem;
+        margin: 0;
+    }
+    
+    .news-grid,
+    .schedule-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .app-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .rule-card {
+        flex-direction: column;
+        padding: 1.25rem;
+    }
+    
+    .rule-icon {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+    
+    .step-card {
+        flex-direction: column;
+        padding: 1.25rem;
+    }
+    
+    .step-number {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+    
+    .scoring-table th, 
+    .scoring-table td {
+        padding: 0.75rem;
+    }
+    
+    .rules-section {
+        padding: 3rem 0;
+    }
+    
+    .achievements-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .achievement-card {
+        padding: 1.5rem;
+    }
+    
+    .achievement-icon {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .achievement-icon img {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .timeline-card-content {
+        padding: 15px;
+    }
+    
+    .tabs-nav {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    
+    .tab-btn {
+        padding: 0.8rem 1.2rem;
+        font-size: 0.9rem;
+    }
+    
+    .tab-text h3 {
+        font-size: 1.5rem;
+    }
+    
+    /* App Button */
+    .btn-app {
+        width: 100%;
+        padding: 1rem 1.5rem;
+    }
+    
+    /* System Requirements */
+    .requirements-box {
+        padding: 1.5rem;
+    }
+    
+    .requirements-list li {
+        font-size: 1rem;
+    }
+    
+    .requirements-notes li {
+        font-size: 1rem;
+    }
+    
+    .main-nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        max-width: 350px;
+        height: 100vh;
+        background-color: var(--dark-color);
+        z-index: 100;
+        transition: right 0.3s ease;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
+        padding: 80px 30px 30px;
+        overflow-y: auto;
+    }
+    
+    .main-nav.active {
+        right: 0;
+    }
+    
+    .main-nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        margin-top: 20px;
+    }
+    
+    .main-nav ul li {
+        margin: 0 0 20px;
+        width: 100%;
+    }
+    
+    .main-nav ul li a {
+        padding: 12px 0;
+        display: block;
+        width: 100%;
+        color: var(--white);
+        font-size: 1.2rem;
+    }
+    
+    .mobile-menu-toggle {
+        display: flex;
+        z-index: 102;
+        transition: transform 0.3s ease;
+    }
+    
+    .mobile-menu-toggle.active {
+        transform: rotate(180deg);
+        position: fixed;
+        right: 20px;
+        top: 20px;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 50%;
+        padding: 5px;
+    }
+    
+    /* Стили для затемнения страницы при открытом меню */
+    body.menu-open {
+        overflow: hidden;
+        position: relative;
+    }
+    
+    body.menu-open::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 99;
+    }
+}
+
+/* Mobile landscape */
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+    
+    .header-inner, .header-wrapper {
+        padding: 0.8rem 0;
+    }
+    
+    .logo h1 {
+        font-size: 1.5rem;
+    }
+    
+    .footer-logo h1 {
+        font-size: 1.5rem;
+    }
+    
+    .footer-column {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    
+    .footer-top {
+        flex-direction: column;
+    }
+    
+    .main-nav {
+        position: fixed;
+        top: 0;
+				bottom: 0;
+				margin: 0;
+        right: -300px;
+        width: 250px;
+        height: 100%;
+        background-color: var(--secondary-color);
+        z-index: 100;
+        transition: all 0.4s ease;
+        overflow-y: auto;
+    }
+    
+    .main-nav.active {
+        right: 0;
+        padding: 3rem 1.5rem;
+    }
+    
+    .main-nav ul {
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .main-nav ul li {
+        margin: 0 0 1.5rem;
+    }
+    
+    .main-nav ul li:last-child {
+        margin-bottom: 0;
+    }
+    
+    .hero .container {
+        flex-direction: column;
+    }
+    
+    .hero-content, 
+    .hero-image {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    
+    .hero-content h2 {
+        font-size: 2.2rem;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+    }
+    
+    .legal-wrapper {
+        padding: 1.5rem;
+    }
+    
+    .policy-section h2 {
+        font-size: 1.3rem;
+    }
+    
+    .cookies-table {
+        overflow-x: auto;
+    }
+    
+    .thank-you-content {
+        padding: 2rem;
+    }
+    
+    .thank-you-buttons {
+        flex-direction: column;
+    }
+    
+    .thank-you-buttons .btn {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    
+    .next-steps {
+        grid-template-columns: 1fr;
+    }
+    
+    .team-wrapper {
+        grid-template-columns: 1fr;
+    }
+    
+    .mission-wrapper {
+        grid-template-columns: 1fr;
+    }
+    
+    .about-stats {
+        flex-direction: column;
+    }
+    
+    .testimonial {
+        flex: 0 0 calc(100% - 2rem);
+    }
+    
+    .tournament-card {
+        flex-direction: column;
+    }
+    
+    .tournament-date {
+        width: 100%;
+        flex-direction: row;
+        padding: 1rem;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+    
+    .day, .month {
+        font-size: 1.2rem;
+        margin: 0;
+    }
+    
+    .news-grid,
+    .schedule-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .app-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .rule-card {
+        flex-direction: column;
+        padding: 1.25rem;
+    }
+    
+    .rule-icon {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+    
+    .step-card {
+        flex-direction: column;
+        padding: 1.25rem;
+    }
+    
+    .step-number {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+    
+    .scoring-table th, 
+    .scoring-table td {
+        padding: 0.75rem;
+    }
+    
+    .rules-section {
+        padding: 3rem 0;
+    }
+    
+    .achievements-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .achievement-card {
+        padding: 1.5rem;
+    }
+    
+    .achievement-icon {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .achievement-icon img {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .timeline-card-content {
+        padding: 15px;
+    }
+    
+    .timeline-card-year {
+        font-size: 16px;
+    }
+    
+    .timeline-card-title {
+        font-size: 18px;
+    }
+    
+    .timeline-card-desc {
+        font-size: 14px;
+    }
+    
+    .challenge-icon {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .challenge-icon img {
+        width: 28px;
+        height: 28px;
+    }
+    
+    .achievements-list li {
+        padding: 0.6rem 0;
+    }
+    
+    .resources-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .resource-icon {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .resource-icon img {
+        width: 25px;
+        height: 25px;
+    }
+    
+    .tab-btn {
+        padding: 0.6rem 1rem;
+        font-size: 0.85rem;
+    }
+    
+    .feature-list li {
+        padding-left: 1.5rem;
+        margin-bottom: 0.6rem;
+    }
+    
+    /* System Requirements */
+    .requirements-box h3,
+    .requirements-notes h3 {
+        font-size: 1.2rem;
+    }
+    
+    /* Timeline */
+    .timeline-section {
+        padding: 40px 0;
+    }
+    
+    .timeline-cards::after {
+        width: 3px;
+    }
+    
+    .timeline-card-item::after {
+        width: 12px;
+        height: 12px;
+    }
+    
+    .contact-info {
+        padding: 1.5rem;
+    }
+    
+    .contact-info-list {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+    .contact-info-item {
+        margin-bottom: 0;
+    }
+    
+    .contact-hours {
+        margin-top: 1.5rem;
+    }
+    
+    .contact-form-container {
+        padding: 1.5rem;
+    }
+    
+    .rules-intro {
+        flex-direction: column-reverse;
+        padding: 0 1rem;
+        gap: 1.5rem;
+    }
+    
+    .rules-intro p {
+        min-width: 100%;
+    }
+    
+    .rules-image {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+}
+
+/* Mobile portrait */
+@media screen and (max-width: 576px) {
+    body {
+        font-size: 14px;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    h3 {
+        font-size: 1.3rem;
+    }
+    
+    .page-header h1 {
+        font-size: 2rem;
+    }
+    
+    /* Features Section */
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* CTA Section */
+    .cta-section h2 {
+        font-size: 1.8rem;
+    }
+    
+    /* Stats Section */
+    .stats-section {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Contact Hours */
+    .hours-list {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Footer */
+    .footer-content, .footer-top {
+        grid-template-columns: 1fr;
+    }
+    
+    .social-icons {
+        flex-wrap: wrap;
+    }
+    
+    .btn-primary, 
+    .btn-secondary {
+        display: block;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+    }
+    
+    .app-features li {
+        font-size: 0.95rem;
+    }
+    
+    .download-content h2 {
+        font-size: 1.8rem;
+    }
+    
+    .news-content h3,
+    .tournament-details h3 {
+        font-size: 1.1rem;
+    }
+    
+    .footer-logo h1 {
+        font-size: 1.2rem;
+    }
+    
+    .faq-question h3 {
+        font-size: 1rem;
+    }
+    
+    .rule-details h3,
+    .step-content h3,
+    .strategy-card h3,
+    .rule-item h3 {
+        font-size: 1.1rem;
+    }
+    
+    .rules-section {
+        padding: 2rem 0;
+    }
+    
+    .timeline-card-content {
+        padding: 15px;
+    }
+    
+    .timeline-card-year {
+        font-size: 16px;
+    }
+    
+    .timeline-card-title {
+        font-size: 18px;
+    }
+    
+    .timeline-card-desc {
+        font-size: 14px;
+    }
+    
+    .achievement-card h3,
+    .timeline-content h3,
+    .testimonial-content p {
+        font-size: 1rem;
+    }
+    
+    .challenge-icon {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .challenge-icon img {
+        width: 28px;
+        height: 28px;
+    }
+    
+    .achievements-list li {
+        padding: 0.6rem 0;
+    }
+    
+    .resources-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .resource-icon {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .resource-icon img {
+        width: 25px;
+        height: 25px;
+    }
+    
+    .tab-btn {
+        padding: 0.6rem 1rem;
+        font-size: 0.85rem;
+    }
+    
+    .feature-list li {
+        padding-left: 1.5rem;
+        margin-bottom: 0.6rem;
+    }
+    
+    /* System Requirements */
+    .requirements-box h3,
+    .requirements-notes h3 {
+        font-size: 1.2rem;
+    }
+    
+    /* Timeline */
+    .timeline-section {
+        padding: 40px 0;
+    }
+    
+    .timeline-cards::after {
+        width: 3px;
+    }
+    
+    .timeline-card-item::after {
+        width: 12px;
+        height: 12px;
+    }
+    
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .contact-info, 
+    .contact-form-container {
+        padding: 1rem;
+    }
+    
+    .contact-info h2,
+    .contact-form-container h2 {
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+    }
+    
+    .contact-info-item {
+        align-items: flex-start;
+        margin-bottom: 1rem;
+    }
+    
+    .contact-info-icon {
+        width: 40px;
+        height: 40px;
+        margin-right: 0.75rem;
+    }
+    
+    .contact-info-text h4 {
+        font-size: 1rem;
+    }
+    
+    .form-group {
+        margin-bottom: 1rem;
+    }
+    
+    .form-control {
+        padding: 0.75rem;
+    }
+    
+    .rules-intro {
+        gap: 1rem;
+    }
+    
+    .rules-intro h2 {
+        font-size: 1.6rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .rules-intro p {
+        font-size: 0.95rem;
+    }
+    
+    .rules-image {
+        border-radius: 8px;
+    }
+    
+    .logo h1 {
+        font-size: 1.2rem;
+    }
+    
+    .header-inner {
+        padding: 1rem 0;
+    }
+} 
