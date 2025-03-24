@@ -650,14 +650,6 @@ header, .site-header {
     padding: 0 1rem;
 }
 
-.testimonial-text p:before,
-.testimonial-text p:after {
-    content: '"';
-    font-size: 2rem;
-    color: var(--primary-color);
-    opacity: 0.5;
-}
-
 .testimonial-author {
     display: flex;
     align-items: center;
@@ -2923,4 +2915,21 @@ textarea.form-control {
 .footer-column .contact-info-icon {
     background: rgba(255, 255, 255, 0.1);
 }
-  
+
+.footer-badges {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.footer-badges img {
+    height: 40px;
+    width: auto;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.footer-badges img:hover {
+    opacity: 1;
+}

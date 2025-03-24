@@ -48,7 +48,7 @@
         max-width: 900px;
     }
     
-    .logo h1 {
+    .logo h2 {
         font-size: 1.6rem;
     }
     
@@ -82,6 +82,10 @@
     .overview-image {
         margin-top: 2rem;
     }
+
+		.news-image {
+			height: auto;
+		}
     
     .about-text,
     .about-image {
@@ -111,7 +115,7 @@
     }
     
     .footer-content, .footer-top {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
     }
     
     .footer-logo, 
@@ -144,54 +148,6 @@
     
     .rules-content h2 {
         margin-bottom: 2rem;
-    }
-    
-    .timeline-cards {
-        padding: 0 15px;
-    }
-    
-    .timeline-card-content {
-        padding: 20px;
-    }
-    
-    .timeline-section {
-        padding: 60px 0;
-    }
-    
-    .timeline-cards::after {
-        left: 30px;
-    }
-    
-    .timeline-card-item {
-        width: 100%;
-        padding-left: 70px;
-        padding-right: 0;
-        margin-bottom: 30px;
-    }
-    
-    .timeline-card-right {
-        margin-left: 0;
-    }
-    
-    .timeline-card-left::after,
-    .timeline-card-right::after {
-        left: 20px;
-    }
-    
-    .timeline-card-left .timeline-card-content::before,
-    .timeline-card-right .timeline-card-content::before {
-        left: -40px;
-        right: auto;
-        border-width: 8px 8px 8px 0;
-        border-color: transparent #fff transparent transparent;
-    }
-    
-    .timeline-card-year {
-        font-size: 16px;
-    }
-    
-    .timeline-card-title {
-        font-size: 18px;
     }
     
     .timeline-card-desc {
@@ -434,11 +390,11 @@
         padding: 0.8rem 0;
     }
     
-    .logo h1 {
+    .logo h2 {
         font-size: 1.5rem;
     }
     
-    .footer-logo h1 {
+    .footer-logo h2 {
         font-size: 1.5rem;
     }
     
@@ -803,13 +759,14 @@
     .download-content h2 {
         font-size: 1.8rem;
     }
+
     
     .news-content h3,
     .tournament-details h3 {
         font-size: 1.1rem;
     }
     
-    .footer-logo h1 {
+    .footer-logo h2 {
         font-size: 1.2rem;
     }
     
@@ -964,7 +921,7 @@
         border-radius: 8px;
     }
     
-    .logo h1 {
+    .logo h2 {
         font-size: 1.2rem;
     }
     
